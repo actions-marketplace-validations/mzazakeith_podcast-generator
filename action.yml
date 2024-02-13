@@ -1,7 +1,7 @@
 name: "Podcast Generator"
 author: "Keith M"
 description: "Generates a feed for a podcast from a YAML file"
-run:
+runs:
   using: "docker"
   image: "Dockerfile"
 branding:
@@ -13,6 +13,6 @@ inputs:
     required: true
     default: ${{github.actor}}@localhost
   name:
-    descitpion: The committer's bane
+    description: The committer's bane
     required: true
     default: ${{github.actor}}
